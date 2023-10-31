@@ -1,0 +1,109 @@
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+.text1{
+    background-color:#e9f0f0;
+    display: block;
+    font-style: italic;
+    margin: 15px;
+    padding: 2px;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(7, 7, 7);
+    box-shadow: 6px 4px 8px;
+    border-radius: 7px;
+    
+}
+
+
+.text2{
+    
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 20px 10px 10px;
+    padding-right: 70px;  
+   
+    padding: 2px;
+    color: black;
+}
+
+.card-title{
+    background-color:#e9f0f0;  
+}
+
+.card-text{
+    background-color:#e9f0f0;
+}
+
+.cardtext123{
+    background-color:#e9f0f0;  
+}
+
+.team{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(7, 7, 7);
+    box-shadow: 6px 4px 8px;
+    border-radius: 7px;
+    background-color: #e9f0f0;
+}
+.team_image{
+    padding-left: 50px;
+    padding-right: 50px;
+    filter: grayscale(30%);
+    border-radius: 50%;
+}
+
+.team_image:hover{
+    filter: grayscale(0%);
+ }
+
+.team_mem_name{
+    padding-left: 90px;  
+}
+
+.team_mem_name_avni{
+    padding-left: 130px;  
+}
+
+.team_mem_name_palash{
+    padding-left: 70px;  
+}
+
+.team_mem_name_abhishek{
+    padding-left: 20px;
+}
+.team_mem_zone{
+    padding-left: 180px;
+
+}
+
+.team-icons{
+    padding-left: 100px;
+}
+
+.bi1{  
+    color:rgb(138, 136, 136);  
+    font-size:20px;  
+    margin:25px;  
+    }  
+
+.bi-phone{
+    padding-left: 120px; 
+}
+
+.bi-email{
+    padding-left: 100px; 
+}

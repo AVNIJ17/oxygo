@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oxygen Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  <script th:src="@{/js/bootstrap.js}">
+  
+  </script>
+   
+</head>
+
+<body>
+	
+<section class="vh-100" style="background-color: #f4f5f7;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <div class="card mb-3" style="border-radius: .5rem;">
+          <div class="row g-0">
+          <div th:if="${param.Login}" class="alert alert-success">
+							Logout Sucessfully</div>
+          <h1 class="row d-flex justify-content-center align-items-center h-100">$$ Welcome [[${user.fName}]] $$</h1>
+            <div class="col-md-4 text-center text-black"
+              style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; background: #f6d365;">
+              
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+              <h2 >[[${user.fName}]]</h2>
+              <p>Role User</p>
+              <i class="far fa-edit mb-5"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h6>Information</h6>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h4>First Name</h4>
+                    <h5><p class="text-muted">[[${user.fName}]]</p></h5>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h4>Last Name</h4>
+                    <h5><p class="text-muted"> [[${user.lName}]]</p></h5>
+                  </div>
+                </div>
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h4>Email</h4>
+                    <h5><p class="text-muted">[[${user.email}]]</p></h5>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h4>Phone</h4>
+                    <h5><p class="text-muted"> [[${user.phone}]]</p></h5>
+                  </div>
+                </div>
+                <h4>Location</h4>
+                <hr class="mt-0 mb-4">
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h4>City</h4>
+                    <h5><p class="text-muted">[[${user.city}]]</p></h5>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h4>Pincode</h4>
+                    <h5><p class="text-muted">[[${user.pincode}]]</p></h5>
+                  </div>
+                </div>
+                <a href="/ProductPage"><button type="button" class="btn btn-success btn-rounded btn-block btn-lg"><i
+                class="far fa-clock me-2"></i>Continue</button></a>
+                
+                <a href="/logout"><button type="button" class="btn btn-success btn-rounded btn-block btn-lg"><i
+                class="far fa-clock me-2"></i>Log Out</button></a>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+	
+
+    <script src="Pscript.js"></script>
+</body>
+</html>
+
+

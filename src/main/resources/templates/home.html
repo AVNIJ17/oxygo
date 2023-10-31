@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oxygen Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="Pstyle.css" />
+    <!-- Demo CSS (No need to include it into your project) -->
+    <link rel="stylesheet" href="Pdemo.css" />
+</head>
+
+<body>
+<h1>User After Login: Home Page</h1>
+	<a href="/logout"><button style="align-items: flex-end;">Logout</button></a>
+	<h1>Name : [[${user.fName}]]</h1>
+	<h1>Email : [[${user.email}]]</h1>
+	<h1>Phone : [[${user.phone}]]</h1>
+	<h1>City : [[${user.city}]]</h1>
+	<h1>Pincode : [[${user.pincode}]]</h1>
+<main>
+    
+    
+      <!-- Start DEMO HTML (Use the following code into your project)-->
+      <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+          <h1 class="cart-is-empty">Cart is empty</h1>
+
+          <div class="product-rows"></div>
+          <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+            <button class="purchase-btn">PURCHASE</button>
+          </div>
+        </div>
+      </div>
+
+      <!--   end of cart modal -->
+      <div class="cart-btn">
+        <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class="cart-quantity">0</span>
+      </div>
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image"  alt=""/>
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen</h2>
+          <span class="product-price">$1395</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="2.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Optima</h2>
+          <span class="product-price">$1175</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="3.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mozilla</h2>
+          <span class="product-price">$1150</span>
+        </div>
+      </div>
+
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="image/4.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Power</h2>
+          <span class="product-price">$1575</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="image/5.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen classic</h2>
+          <span class="product-price">$1230</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="image/6.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>OxygGo</h2>
+          <span class="product-price">$1395</span>
+        </div>
+      </div>
+
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="image/7.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Latest</h2>
+          <span class="product-price">$1175</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="image/11.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mini</h2>
+          <span class="product-price">$1150</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="image/9.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mapro</h2>
+          <span class="product-price">$1575</span>
+        </div>
+      </div>
+
+      <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+
+    <script src="Pscript.js"></script>
+</body>
+</html>
+
+

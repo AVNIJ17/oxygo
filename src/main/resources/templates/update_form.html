@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Update Form</title>
+<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js" ></script>
+</head>
+<body>
+	<h1 class="text-success text-center">Update Fields Here</h1>
+	<h2 class="text-center">Add updated data to Inventory</h2>
+	<div class="container">
+		<form action="register" class="was-validated" method="post" id="add_form"> 
+		<div class="form-group">
+				<label for="contact">Unique id:</label>
+				<input type="text" class="form-control" id="id"
+					placeholder="Enter unique ID" name="id"
+					required readonly="readonly">
+				<div class="valid-feedback">Valid</div>
+				<div class="invalid-feedback">
+					Please fill this field
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="city">City:</label>
+				<input type="text" class="form-control" id="city"
+					placeholder="Enter city" name="city" required>
+				<div class="valid-feedback">Valid</div>
+				<div class="invalid-feedback">
+					Please fill this field
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="state">State:</label>
+				<input type="text" class="form-control" id="state"
+					placeholder="Enter state" name="state" required>
+				<div class="valid-feedback">Valid</div>
+				<div class="invalid-feedback">
+					Please fill this field
+				</div>
+			</div>
+					<div class="form-group">
+					  <label for="sel1">Select Type:</label>
+					  <select class="form-control" id="type"  name="type">
+					    <option>Small</option>
+					    <option>Medium</option>
+					    <option>Large</option>
+					  </select>
+					</div>
+			<div class="form-group">
+				<label for="contact">Numbers:</label>
+				<input type="text" class="form-control" id="number"
+					placeholder="Enter Number of available cylinders" name="number"
+					required>
+				<div class="valid-feedback">Valid</div>
+				<div class="invalid-feedback">
+					Please fill this field
+				</div>
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="checkbox"
+						name="remember" required> I agree
+					<div class="valid-feedback">Valid</div>
+					<div class="invalid-feedback">
+						Please check the checkbox
+					</div>
+				</label>
+			</div>
+			<button type="submit" class="btn bg-success" id="bth_submit" >
+				Add
+			</button>
+		</form>
+	</div>
+		<script type="text/javascript">
+	var hr=window.location.href.split("=");
+	console.log(hr[1]);
+	const id=hr[1];
+	$(document).ready(function(){
+	    $.getJSON("http://localhost:9090/inventory/"+id+"", function(result){
+	    	document.getElementById("id").value=result.id;
+	    	document.getElementById("city").value=result.city;
+	    	document.getElementById("state").value=result.state;
+	    	document.getElementById("type").value=result.type;
+	    	document.getElementById("number").value=result.number;
+	 	    });
+	 });
+
+	</script>
+</body>
+</html>

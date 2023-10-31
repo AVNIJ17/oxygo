@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.container{
+    margin-top:100px;
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 15px 5px 12px;
+	text-align: center
+}
+
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: black;
+	font-size: 18px;
+	font-weight: 500
+	
+}
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: black
+}
+
+
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px;
+	margin-top:10px;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodeHim" />
+    <title>Oxygen Cart</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href=
+"https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity=
+"sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+         crossorigin="anonymous">
+         <link rel="shortcut icon" href="Oxygen.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="ProductPage.css" />
+    <!-- Demo CSS (No need to include it into your project) -->
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 15vh;">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#"><img id="image-1" class="logo1" alt="LOGO" src="Oxygen.png" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index">Home</a>
+        </li>
+       
+         
+         <li class="nav-item">
+          <a class="nav-link" href="/register">Profile</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="all_services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <br>
+    <main>
+      <!-- Start DEMO HTML (Use the following code into your project)-->
+      <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+          <h1 class="cart-is-empty">Cart is empty</h1>
+
+          <div class="product-rows"></div>
+          <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price" id="bill">₹0</span>
+            <button class="purchase-btn">PURCHASE</button>
+          </div>
+        </div>
+      </div>
+
+      <!--   end of cart modal -->
+      <div class="cart-btn">
+        <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class="cart-quantity">0</span>
+      </div>
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="12.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen</h2>
+          <span class="product-price">₹1395</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="2.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Optima</h2>
+          <span class="product-price">₹1175</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="3.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mozilla</h2>
+          <span class="product-price">₹1150</span>
+        </div>
+      </div>
+
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="4.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Power</h2>
+          <span class="product-price">₹1575</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="5.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen classic</h2>
+          <span class="product-price">₹1230</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="6.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>OxygGo</h2>
+          <span class="product-price">₹1395</span>
+        </div>
+      </div>
+
+      <!--  products  -->
+      <div class="items-container">
+        <div class="card-1 card">
+          <img class="product-image" src="7.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Latest</h2>
+          <span class="product-price">₹1175</span>
+        </div>
+        <div class="card-2 card">
+          <img class="product-image" src="11.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mini</h2>
+          <span class="product-price">₹1150</span>
+        </div>
+        <div class="card-3 card">
+          <img class="product-image" src="9.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <h2>Oxygen Mapro</h2>
+          <span class="product-price">₹1575</span>
+        </div>
+      </div>
+
+      <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid ">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #21D192"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Oxygen Pvt. Ltd.</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here we supply the life line that is oxygen. We keep this in
+              mind that none of our customers have to get in problem with
+              Oxygen supply.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a class="text-dark">Liquid Oxygen</a>
+            </p>
+            <p>
+              <a class="text-dark">Gaseous Oxygen</a>
+            </p>
+            <p>
+              <a  class="text-dark">Large scale</a>
+            </p>
+            <p>
+              <a class="text-dark">Sports Purpose</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="AboutUs" class="text-dark">AboutUs</a>
+            </p>
+            <p>
+              <a href="login" class="text-dark">Login</a>
+            </p>
+            <p>
+              <a href="all_services" class="text-dark">All services</a>
+            </p>
+            <p>
+              <a href="team" class="team">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Sector 23 ,Mumbai-east</p>
+            <p><i class="fas fa-envelope mr-3"></i> oxygen@supply.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 9944937495</p>
+            <p><i class="fas fa-print mr-3"></i> +91 8954920403</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      <a class="text-dark" href="home.html"
+         >Oxygen Pvt. Ltd</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+    <script src="ProductPage.js"></script>
+  </body>
+</html>
